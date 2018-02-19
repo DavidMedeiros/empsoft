@@ -1,0 +1,126 @@
+::-webkit-scrollbar {
+    display: none;
+}
+
+.fade-element-in.ng-enter {
+    transition: 0.2s linear all;
+    opacity: 0;
+}
+
+.fade-element-in-init .fade-element-in.ng-enter {
+    opacity: 1;
+}
+
+.fade-element-in.ng-enter.ng-enter-active {
+    opacity: 1;
+}
+
+.fade-element-in.ng-leave {
+    transition: 0.1s linear all;
+    opacity: 1;
+}
+
+.fade-element-in.ng-leave.ng-leave-active {
+    opacity: 0;
+}
+
+/*Hover grow effect*/
+.hvr-grow {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px transparent;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.1s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+}
+
+.hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
+    -webkit-transform: scale(1.4);
+    transform: scale(1.4);
+}
+
+/*Hover grow effect*/
+
+.check-sidenav {
+    max-height: 100vh;
+}
+
+.check-card-view {
+    min-width: 100vh;
+}
+
+.originalCode {
+    resize: none;
+    overflow-y: scroll;
+    max-height: 200px;
+}
+
+.add-report:hover {
+    color: forestgreen;
+}
+
+.save-report:hover {
+    color: dodgerblue;
+}
+
+.check-del-button {
+    color: darkgray;
+}
+
+.check-del-button:hover {
+    color: red;
+}
+
+.md-button.custom-text {
+    color: darkgray;
+    font-family: Roboto, Helvetica Neue, sans-serif;
+!important;
+    font-size: 16px;
+    text-align: center;
+!important;
+    text-transform: none;
+}
+
+.create-modal {
+    height: 80vh;
+    width: 60vw;
+}
+
+.deep-shadow {
+    text-shadow: 0px 1px 4px rgba(150, 150, 154, 0.76);
+}
+
+.no-focus-fx:focus {
+    outline: 0;
+}
+
+.loading-indicator {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.error-message {
+    color: red;
+}
+
+.delete-button {
+    color: #D32F2F;
+}
+
+/*.md-chips {*/
+    /*width: 100%;*/
+    /*white-space: nowrap;*/
+    /*overflow-x: scroll;*/
+/*}*/
+
+/*!* Remove  .md-chips .md-chip-input-container*/
+  /*if you want the placehoder in a new line*!*/
+/*.md-chips md-chip, .md-chips .md-chip-input-container {*/
+    /*display: inline-block !important;*/
+    /*float: none !important;*/
+/*}*/
