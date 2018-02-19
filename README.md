@@ -1,6 +1,6 @@
 # SOS Redacao
 
-Aplicação web para a facilidade na revisão de código.
+Aplicação web para a facilidade na revisão de redações.
 
 ## Guia para instalação da aplicação
 
