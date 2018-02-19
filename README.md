@@ -1,4 +1,4 @@
-# Form Review
+# SOS Redacao
 
 Aplicação web para a facilidade na revisão de código.
 
@@ -20,12 +20,13 @@ As versões das tecnologias usadas atualmente são:
  1. Instalar o NodeJS
  
  2. Instalar o MongoDB
-	 2.1 Criar diretórios para o MongoDB, o default é <i>`C:/data/db`</i>
+
+ 3. Criar diretórios para o MongoDB, o default é <i>`C:/data/db`</i>
 	 
- 3. Executar `npm install` no diretório da aplicação
+ 4. Executar `npm install` no diretório da aplicação
  
- 4. Executar o mongod (localizado no diretório de instalação do MongoDB)
+ 5. Executar o mongod (localizado no diretório de instalação do MongoDB)
  
- 5. Executar `npm start` no diretório da aplicação
+ 6. Executar `npm start` no diretório da aplicação
  
- 6. OPCIONAL - Executar o Robo3T e conectar ao banco de dados, a porta default é :27017
+ 7. OPCIONAL - Executar o Robo3T e conectar ao banco de dados, a porta default é :27017
