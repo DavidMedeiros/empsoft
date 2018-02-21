@@ -12,6 +12,12 @@ angular.module('sos-redacao').config(['$stateProvider', '$urlRouterProvider', fu
             controller: 'HomeController as homeCtrl'
         })
 
+        .state('redator', {
+            url: '/redator',
+            templateUrl: './view/redator.html',
+            controller: 'RedatorController as redCtrl'
+        })
+
 }])
     .constant('_', window._)
     /**

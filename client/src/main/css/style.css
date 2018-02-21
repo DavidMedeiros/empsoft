@@ -48,79 +48,12 @@
     max-height: 100vh;
 }
 
-.check-card-view {
-    min-width: 100vh;
-}
-
-.originalCode {
-    resize: none;
-    overflow-y: scroll;
-    max-height: 200px;
-}
-
-.add-report:hover {
-    color: forestgreen;
-}
-
-.save-report:hover {
-    color: dodgerblue;
-}
-
-.check-del-button {
-    color: darkgray;
-}
-
-.check-del-button:hover {
-    color: red;
-}
-
-.md-button.custom-text {
-    color: darkgray;
-    font-family: Roboto, Helvetica Neue, sans-serif;
-!important;
-    font-size: 16px;
-    text-align: center;
-!important;
-    text-transform: none;
-}
-
-.create-modal {
-    height: 80vh;
-    width: 60vw;
-}
-
-.deep-shadow {
-    text-shadow: 0px 1px 4px rgba(150, 150, 154, 0.76);
-}
-
-.no-focus-fx:focus {
-    outline: 0;
-}
-
-.loading-indicator {
-    position: fixed;
+.center-div {
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    width:30em;
+    height:18em;
+    margin-top: -9em; /*set to a negative number 1/2 of your height*/
+    margin-left: -15em; /*set to a negative number 1/2 of your width*/
+    position:fixed;
 }
-
-.error-message {
-    color: red;
-}
-
-.delete-button {
-    color: #D32F2F;
-}
-
-/*.md-chips {*/
-    /*width: 100%;*/
-    /*white-space: nowrap;*/
-    /*overflow-x: scroll;*/
-/*}*/
-
-/*!* Remove  .md-chips .md-chip-input-container*/
-  /*if you want the placehoder in a new line*!*/
-/*.md-chips md-chip, .md-chips .md-chip-input-container {*/
-    /*display: inline-block !important;*/
-    /*float: none !important;*/
-/*}*/

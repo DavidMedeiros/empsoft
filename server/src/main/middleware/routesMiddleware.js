@@ -3,7 +3,6 @@ const routesMiddleware = {};
 const redacaoRouter = require('../router/redacaoRouter');
 
 //login requirements
-var path = require('path');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var flash = require('connect-flash');
@@ -34,7 +33,6 @@ routesMiddleware.set = function(app) {
 
 //flash connect
     app.use(flash());
-
     app.use('/api/redacao', redacaoRouter);
 };
 

@@ -1,5 +1,5 @@
 {
-  "name": "new-form",
+  "name": "sos-redacao",
   "version": "1.0.0",
   "description": "Ferramenta de auxilio a code review",
   "main": "app.js",
@@ -8,15 +8,13 @@
     "start": "node app.js"
   },
   "repository": {
-    "type": "git",
-    "url": "git+https://github.com/filipeteotonio/new-form.git"
+    "type": "git"
   },
   "author": "Ingenico",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/filipeteotonio/new-form/issues"
   },
-  "homepage": "https://github.com/filipeteotonio/new-form#readme",
+  "homepage": "",
   "dependencies": {
     "@uirouter/angularjs": "^1.0.3",
     "angular": "^1.6.5",
