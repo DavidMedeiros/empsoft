@@ -9,13 +9,13 @@ angular.module('sos-redacao').config(['$stateProvider', '$urlRouterProvider', fu
         .state('home', {
             url: '/home',
             templateUrl: './view/home.html',
-            controller: 'HomeController as homeCtrl'
+            controller: 'HomeController as ctrl'
         })
 
         .state('redator', {
             url: '/redator',
             templateUrl: './view/redator.html',
-            controller: 'RedatorController as redCtrl'
+            controller: 'RedatorController as ctrl'
         })
 
 }])
