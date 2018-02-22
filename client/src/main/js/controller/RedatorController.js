@@ -1,10 +1,13 @@
-angular.module('sos-redacao').controller('RedatorController', ['$scope', '$state', 'Upload', function ($scope, $state, Upload) {
+angular.module('sos-redacao').controller('RedatorController', ['$scope', '$state', 'Redacao', 'RedacaoService',
+    function ($scope, $state, Redacao, RedacaoService) {
     var self = this;
 
     self.redacoes = [{name: 'Redacao01', status: 1},{name: 'Redacao02', status: 0},{name: 'Redacao03', status: 1}];
+    $scope.imgSrc = '';
+    $scope.redacaoImage = '';
 
     $scope.$watch('redacaoImage', function () {
-        $scope.imageUpload($scope.files);
+        $scope.imageUpload($scope.redacaoImage);
     });
 
     $scope.imageUpload = function (redacaoImage) {
@@ -17,10 +20,15 @@ angular.module('sos-redacao').controller('RedatorController', ['$scope', '$state
     };
 
     $scope.imageIsLoaded = function(e){
-        $scope.$apply(function() {
-            // $scope.imgSrc =  e.target.result;
-            //TODO: POST DE REDACAO
-        });
+
+        var redacao = new Redacao(e.target.result, 0);
+
+        RedacaoService.insere(redacao).then(function(response) {
+            console.log(response.data);
+        },
+            function(err) {
+            console.log(err);
+        })
     };
 
 

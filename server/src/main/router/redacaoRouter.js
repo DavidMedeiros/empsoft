@@ -42,6 +42,7 @@ redacaoRouter.get('/:id', function (request, response) {
  * @returns {*} A json with the created category if the request is successful, error otherwise.
  */
 redacaoRouter.post('/', function (request, response) {
+    console.log("CHEGOOOOOOOU");
     redacaoService.create(request.body, function (err, result) {
         if(err) {
             return response.status(err.status || _.BAD_REQUEST).json(err.message || err);

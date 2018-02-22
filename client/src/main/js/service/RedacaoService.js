@@ -4,5 +4,10 @@ var self = this;
 const API = '/api/redacao';
 
 
+    self.insere = function(redacao) {
+        console.log("asljdasd");
+        return $http.post(`${API}`, redacao);
+    };
+
 
 }]);

@@ -14,8 +14,29 @@ var categorySchema = new Schema({
 
     status: {
         type: String,
-        required: [true, "A redação deve ter um status."];
-    }
+        required: [true, "A redação deve ter um status."]
+    },
+
+    rateI: {
+        type: Number
+    },
+
+    rateII: {
+        type: Number
+    },
+
+    rateIII: {
+        type: Number
+    },
+
+    rateIV: {
+        type: Number
+    },
+
+    rateV: {
+        type: Number
+    },
+
 });
 
 categorySchema.static('findById', function (id, callback) {
