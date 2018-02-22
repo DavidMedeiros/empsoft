@@ -5,7 +5,16 @@ var Schema = mongoose.Schema;
 var categorySchema = new Schema({
     content: {
         type: String,
-        required: [true, "A redacao nao pode ser vazia."]
+        required: [true, "A redação nao pode ser vazia."]
+    },
+
+    comments: {
+        type: String
+    },
+
+    status: {
+        type: String,
+        required: [true, "A redação deve ter um status."];
     }
 });
 

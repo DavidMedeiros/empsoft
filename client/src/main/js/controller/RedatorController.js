@@ -1,24 +1,26 @@
 angular.module('sos-redacao').controller('RedatorController', ['$scope', '$state', 'Upload', function ($scope, $state, Upload) {
     var self = this;
 
-    self.files;
+    self.redacoes = [{name: 'Redacao01', status: 1},{name: 'Redacao02', status: 0},{name: 'Redacao03', status: 1}];
 
-    self.redacoes = [{name: 'a', status: 1},{name: 'b', status: 0},{name: 'c', status: 1}];
-
-
-    $scope.$watch('files', function () {
-        $scope.upload($scope.files);
+    $scope.$watch('redacaoImage', function () {
+        $scope.imageUpload($scope.files);
     });
-    $scope.$watch('file', function () {
-        if ($scope.file != null) {
-            $scope.files = [$scope.file];
-        }
-    });
-    $scope.log = '';
 
-    $scope.upload = function (files) {
-        if(files)
-            console.log(files.name);
+    $scope.imageUpload = function (redacaoImage) {
+        if(!redacaoImage) return;
+
+        var reader = new FileReader();
+        reader.onload = $scope.imageIsLoaded;
+        reader.readAsDataURL(redacaoImage);
+
+    };
+
+    $scope.imageIsLoaded = function(e){
+        $scope.$apply(function() {
+            // $scope.imgSrc =  e.target.result;
+            //TODO: POST DE REDACAO
+        });
     };
 
 
