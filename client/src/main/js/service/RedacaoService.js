@@ -4,7 +4,7 @@ var self = this;
 const API = '/api/redacao';
 
 
-    self.insere = function(redacao) {
+    self.insert = function(redacao) {
         return $http.post(`${API}`, redacao);
     };
 
@@ -15,6 +15,10 @@ const API = '/api/redacao';
 
     self.getById = function(id) {
         return $http.get(`${API}/${id}`);
+    };
+
+    self.delete = function(id) {
+      return $http.delete(`${API}/${id}`);
     };
 
 }]);

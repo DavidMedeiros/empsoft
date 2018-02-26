@@ -111,7 +111,7 @@
                             </div>
 
                             <div layout="row" layout-align="center center">
-                                <textarea ng-disabled="true" flex="95" style="height: 170px; font-size: 13px;"> </textarea>
+                                <textarea ng-model="ctrl.redacao.comments" ng-disabled="true" flex="95" style="height: 170px; font-size: 13px;"> </textarea>
                             </div>
                         </div>
                     </div>
@@ -122,6 +122,8 @@
             </md-card-content>
             <md-card-actions layout="row" layout-align="end center">
                 <md-button ng-click="ctrl.voltar()">Voltar</md-button>
+
+                <md-button ng-click="ctrl.excluir()">Excluir</md-button>
             </md-card-actions>
         </md-card>
     </div>

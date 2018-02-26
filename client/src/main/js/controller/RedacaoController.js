@@ -10,12 +10,18 @@ angular.module('sos-redacao').controller('RedacaoController', ['redacao', '$scop
         _.assign(self.redacao, redacao);
 
         self.redacao.nota = soma();
+        self.redacao.comments = ""
 
-        console.log(self.redacao.nota);
     };
 
     self.voltar = function() {
       $state.go('redator');
+    };
+
+    self.excluir = function() {
+        RedacaoService.delete(redacao._id).then(function(result) {
+            $state.go('redator');
+        });
     };
 
     function soma() {

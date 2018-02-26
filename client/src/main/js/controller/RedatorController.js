@@ -35,12 +35,12 @@ angular.module('sos-redacao').controller('RedatorController', ['redacoesList', '
 
     $scope.imageIsLoaded = function(e){
 
-        var redacao = new Redacao(e.target.result, 0, $scope.redacaoImage.name);
+        let name = $scope.redacaoImage.name.slice(0, -4);
+        var redacao = new Redacao(e.target.result, 0, name);
 
-        RedacaoService.insere(redacao).then(function(response) {
+        RedacaoService.insert(redacao).then(function(response) {
             RedacaoService.getAll().then(function(response){
                self.redacoes = angular.copy(response.data);
-               console.log(self.redacoes[0].status);
             });
         },
             function(err) {
