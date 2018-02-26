@@ -4,7 +4,8 @@
             <md-card-title>
                 <md-card-title-text layout="row" layout-align="space-between center">
                     <span class="md-title"> {{ctrl.redacao.name}} </span>
-                    <span class="md-title"> Nota: 100 </span>
+                    <span ng-if="ctrl.redacao.status == 1" class="md-title"> Nota: {{ctrl.redacao.nota}} </span>
+                    <span ng-if="ctrl.redacao.status == 0" class="md-title"> Nota: PENDENTE </span>
                 </md-card-title-text>
             </md-card-title>
 
@@ -45,8 +46,8 @@
 
                         <div layout="column" layout-align="space-around start">
                             <div layout="row" style="padding-top: 2px; padding-left: 10px;">
-                                <md-radio-group layout="row" layout-align="space-between center"
-                                                ng-model="data.group1">
+                                <md-radio-group ng-disabled="true" layout="row" layout-align="space-between center"
+                                                ng-model="ctrl.redacao.rateI">
                                     <md-radio-button value="0" class="md-primary">0</md-radio-button>
                                     <md-radio-button value="40" class="md-primary"> 40</md-radio-button>
                                     <md-radio-button value="80" class="md-primary">80</md-radio-button>
@@ -56,8 +57,8 @@
                             </div>
 
                             <div layout="row" style="padding-top: 3px; padding-left: 10px;">
-                                <md-radio-group layout="row" layout-align="space-between center"
-                                                ng-model="data.group1">
+                                <md-radio-group ng-disabled="true" layout="row" layout-align="space-between center"
+                                                ng-model="ctrl.redacao.rateII">
                                     <md-radio-button value="0" class="md-primary">0</md-radio-button>
                                     <md-radio-button value="40" class="md-primary"> 40</md-radio-button>
                                     <md-radio-button value="80" class="md-primary">80</md-radio-button>
@@ -67,8 +68,8 @@
                             </div>
 
                             <div layout="row" style="padding-top: 3px; padding-left: 10px;">
-                                <md-radio-group layout="row" layout-align="space-between center"
-                                                ng-model="data.group1">
+                                <md-radio-group ng-disabled="true" layout="row" layout-align="space-between center"
+                                                ng-model="ctrl.redacao.rateIII">
                                     <md-radio-button value="0" class="md-primary">0</md-radio-button>
                                     <md-radio-button value="40" class="md-primary"> 40</md-radio-button>
                                     <md-radio-button value="80" class="md-primary">80</md-radio-button>
@@ -78,8 +79,8 @@
                             </div>
 
                             <div layout="row" style="padding-top: 3px; padding-left: 10px;">
-                                <md-radio-group layout="row" layout-align="space-between center"
-                                                ng-model="data.group1">
+                                <md-radio-group ng-disabled="true" layout="row" layout-align="space-between center"
+                                                ng-model="ctrl.redacao.rateIV">
                                     <md-radio-button value="0" class="md-primary">0</md-radio-button>
                                     <md-radio-button value="40" class="md-primary"> 40</md-radio-button>
                                     <md-radio-button value="80" class="md-primary">80</md-radio-button>
@@ -89,8 +90,8 @@
                             </div>
 
                             <div layout="row" style="padding-top: 3px; padding-left: 10px;">
-                                <md-radio-group layout="row" layout-align="space-between center"
-                                                ng-model="data.group1">
+                                <md-radio-group ng-disabled="true" layout="row" layout-align="space-between center"
+                                                ng-model="ctrl.redacao.rateV">
                                     <md-radio-button value="0" class="md-primary">0</md-radio-button>
                                     <md-radio-button value="40" class="md-primary"> 40</md-radio-button>
                                     <md-radio-button value="80" class="md-primary">80</md-radio-button>
@@ -110,7 +111,7 @@
                             </div>
 
                             <div layout="row" layout-align="center center">
-                                <textarea flex="95" style="height: 170px; font-size: 13px;"> </textarea>
+                                <textarea ng-disabled="true" flex="95" style="height: 170px; font-size: 13px;"> </textarea>
                             </div>
                         </div>
                     </div>
@@ -119,8 +120,9 @@
 
 
             </md-card-content>
-
-
+            <md-card-actions layout="row" layout-align="end center">
+                <md-button ng-click="ctrl.voltar()">Voltar</md-button>
+            </md-card-actions>
         </md-card>
     </div>
 </div>
