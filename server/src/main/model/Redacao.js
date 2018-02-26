@@ -5,8 +5,43 @@ var Schema = mongoose.Schema;
 var categorySchema = new Schema({
     content: {
         type: String,
-        required: [true, "A redacao nao pode ser vazia."]
-    }
+        required: [true, "A redação nao pode ser vazia."]
+    },
+
+    name: {
+        type: String,
+        required: [true, "A redação precisa de um nome."]
+    },
+
+    comments: {
+        type: String
+    },
+
+    status: {
+        type: String,
+        required: [true, "A redação deve ter um status."]
+    },
+
+    rateI: {
+        type: Number
+    },
+
+    rateII: {
+        type: Number
+    },
+
+    rateIII: {
+        type: Number
+    },
+
+    rateIV: {
+        type: Number
+    },
+
+    rateV: {
+        type: Number
+    },
+
 });
 
 categorySchema.static('findById', function (id, callback) {

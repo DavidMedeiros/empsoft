@@ -33,7 +33,7 @@ redacaoService.getById = function(id, callback){
 };
 
 redacaoService.delete = function (id, callback) {
-    return Category.remove({_id: id}, function (err, result) {
+    return Redacao.remove({_id: id}, function (err, result) {
         if(err){
             return callback("Erro ao deletar redacao.", null);
         }
