@@ -26,6 +26,34 @@ angular.module('sos-redacao').config(['$stateProvider', '$urlRouterProvider', fu
             }
         })
 
+        .state('redacao', {
+            url: '/redacao/:redacaoId',
+            templateUrl: './view/redacao.html',
+            controller: 'RedacaoController as ctrl',
+            resolve: {
+                redacao: function ($stateParams, RedacaoService) {
+                    return RedacaoService.getById($stateParams.redacaoId).then(function(result){
+                        return result.data;
+                    });
+                }
+            }
+        })
+
+
+        // .state('redacao.redacaoId.info', {
+        //     url: 'redacao/:redacaoId',
+        //     templateUrl: './view/redacao.html',
+        //     controller: 'RedacaoController as ctrl',
+        //     access : {
+        //         restricted: true
+        //     },
+        //     resolve: {
+        //         redacao: function ($stateParams, RedacaoService) {
+        //             return RedacaoService.getById($stateParams.redacaoId).then(info => info.data);
+        //         }
+        //     }
+        // })
+
 }])
     .constant('_', window._)
     /**

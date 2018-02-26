@@ -13,4 +13,8 @@ const API = '/api/redacao';
         return $http.get(`${API}`);
     };
 
+    self.getById = function(id) {
+        return $http.get(`${API}/${id}`);
+    };
+
 }]);

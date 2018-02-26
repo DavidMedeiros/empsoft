@@ -1,5 +1,5 @@
-angular.module('sos-redacao').controller('RedatorController', ['redacoesList', '$scope', '$state', 'Redacao', 'RedacaoService',
-    function (redacoesList, $scope, $state, Redacao, RedacaoService) {
+angular.module('sos-redacao').controller('RedatorController', ['redacoesList', '$scope', '$state', 'Redacao',
+    'RedacaoService', function (redacoesList, $scope, $state, Redacao, RedacaoService) {
     var self = this;
 
     self.redacoes = [];
@@ -8,6 +8,16 @@ angular.module('sos-redacao').controller('RedatorController', ['redacoesList', '
 
     self.$onInit = function () {
         self.redacoes = angular.copy(redacoesList.data);
+    };
+
+    self.atualizar = function() {
+        RedacaoService.getAll().then(function(response){
+           self.redacoes = angular.copy(response.data);
+        });
+    };
+
+    self.visualizar = function(id) {
+        $state.go('redacao', {redacaoId: id} );
     };
 
     $scope.$watch('redacaoImage', function () {
@@ -35,8 +45,7 @@ angular.module('sos-redacao').controller('RedatorController', ['redacoesList', '
         },
             function(err) {
             console.log(err);
-        })
+        });
     };
-
 
 }]);

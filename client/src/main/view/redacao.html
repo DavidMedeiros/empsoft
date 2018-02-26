@@ -1,0 +1,145 @@
+<div layout="column" layout-fill>
+    <div layout="row" layout-align="center center" layout-fill>
+        <md-card class="md-whiteframe-3dp" style="width: 90%; height: 80%;">
+            <md-card-title>
+                <md-card-title-text layout="row" layout-align="space-between center">
+                    <span class="md-title"> {{ctrl.redacao.name}} </span>
+                    <span class="md-title"> Nota: 100 </span>
+                </md-card-title-text>
+            </md-card-title>
+
+            <md-divider></md-divider>
+
+            <md-card-content layout="row">
+                <div class="md-whiteframe-4dp" layout="column" flex="50">
+                    <div style="overflow-y: scroll;">
+                        <img ng-src="{{ctrl.redacao.content}}"
+                             style="height: 150%; width: 100%;">
+                    </div>
+                </div>
+
+                <div layout="column" flex="50">
+                    <div layout="row" flex>
+                        <div layout="column" layout-align="space-around start" flex style="padding-left: 5px;">
+                            <div layout="row">
+                                <span class="md-title">Competência I:</span>
+                            </div>
+
+                            <div layout="row">
+                                <span class="md-title">Competência II:</span>
+                            </div>
+
+                            <div layout="row">
+                                <span class="md-title">Competência III:</span>
+                            </div>
+
+                            <div layout="row">
+                                <span class="md-title">Competência IV:</span>
+                            </div>
+
+                            <div layout="row">
+                                <span class="md-title">Competência V:</span>
+                            </div>
+
+                        </div>
+
+                        <div layout="column" layout-align="space-around start">
+                            <div layout="row" style="padding-top: 2px; padding-left: 10px;">
+                                <md-radio-group layout="row" layout-align="space-between center"
+                                                ng-model="data.group1">
+                                    <md-radio-button value="0" class="md-primary">0</md-radio-button>
+                                    <md-radio-button value="40" class="md-primary"> 40</md-radio-button>
+                                    <md-radio-button value="80" class="md-primary">80</md-radio-button>
+                                    <md-radio-button value="120" class="md-primary"> 120</md-radio-button>
+                                    <md-radio-button value="160" class="md-primary">160</md-radio-button>
+                                    <md-radio-button value="200" class="md-primary">200</md-radio-button>
+                            </div>
+
+                            <div layout="row" style="padding-top: 3px; padding-left: 10px;">
+                                <md-radio-group layout="row" layout-align="space-between center"
+                                                ng-model="data.group1">
+                                    <md-radio-button value="0" class="md-primary">0</md-radio-button>
+                                    <md-radio-button value="40" class="md-primary"> 40</md-radio-button>
+                                    <md-radio-button value="80" class="md-primary">80</md-radio-button>
+                                    <md-radio-button value="120" class="md-primary"> 120</md-radio-button>
+                                    <md-radio-button value="160" class="md-primary">160</md-radio-button>
+                                    <md-radio-button value="200" class="md-primary">200</md-radio-button>
+                            </div>
+
+                            <div layout="row" style="padding-top: 3px; padding-left: 10px;">
+                                <md-radio-group layout="row" layout-align="space-between center"
+                                                ng-model="data.group1">
+                                    <md-radio-button value="0" class="md-primary">0</md-radio-button>
+                                    <md-radio-button value="40" class="md-primary"> 40</md-radio-button>
+                                    <md-radio-button value="80" class="md-primary">80</md-radio-button>
+                                    <md-radio-button value="120" class="md-primary"> 120</md-radio-button>
+                                    <md-radio-button value="160" class="md-primary">160</md-radio-button>
+                                    <md-radio-button value="200" class="md-primary">200</md-radio-button>
+                            </div>
+
+                            <div layout="row" style="padding-top: 3px; padding-left: 10px;">
+                                <md-radio-group layout="row" layout-align="space-between center"
+                                                ng-model="data.group1">
+                                    <md-radio-button value="0" class="md-primary">0</md-radio-button>
+                                    <md-radio-button value="40" class="md-primary"> 40</md-radio-button>
+                                    <md-radio-button value="80" class="md-primary">80</md-radio-button>
+                                    <md-radio-button value="120" class="md-primary"> 120</md-radio-button>
+                                    <md-radio-button value="160" class="md-primary">160</md-radio-button>
+                                    <md-radio-button value="200" class="md-primary">200</md-radio-button>
+                            </div>
+
+                            <div layout="row" style="padding-top: 3px; padding-left: 10px;">
+                                <md-radio-group layout="row" layout-align="space-between center"
+                                                ng-model="data.group1">
+                                    <md-radio-button value="0" class="md-primary">0</md-radio-button>
+                                    <md-radio-button value="40" class="md-primary"> 40</md-radio-button>
+                                    <md-radio-button value="80" class="md-primary">80</md-radio-button>
+                                    <md-radio-button value="120" class="md-primary"> 120</md-radio-button>
+                                    <md-radio-button value="160" class="md-primary">160</md-radio-button>
+                                    <md-radio-button value="200" class="md-primary">200</md-radio-button>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                    <div layout="row" layout-align="center center" flex style="padding-top: 5px;">
+                        <div layout="column" layout-align="space-between" flex>
+                            <div layout="row" layout-align="center center">
+                                <span class="md-title">Comentarios</span>
+                            </div>
+
+                            <div layout="row" layout-align="center center">
+                                <textarea flex="95" style="height: 170px; font-size: 13px;"> </textarea>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </md-card-content>
+
+
+        </md-card>
+    </div>
+</div>
+
+<!--<div layout="row" flex>-->
+<!--<div layout="column" layout-align="space-around center">-->
+<!--<span layout="row" class="md-title"> Competencia I:</span>-->
+
+<!--<div layout="row" layout-align="space-between center">-->
+<!--<md-radio-group layout="row" layout-align="space-between center"-->
+<!--ng-model="data.group1">-->
+<!--<md-radio-button value="0" class="md-primary">0</md-radio-button>-->
+<!--<md-radio-button value="40" class="md-primary"> 40</md-radio-button>-->
+<!--<md-radio-button value="80" class="md-primary">80</md-radio-button>-->
+<!--<md-radio-button value="120" class="md-primary"> 120</md-radio-button>-->
+<!--<md-radio-button value="160" class="md-primary">160</md-radio-button>-->
+<!--<md-radio-button value="200" class="md-primary">200</md-radio-button>-->
+
+<!--</md-radio-group>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
