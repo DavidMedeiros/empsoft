@@ -22,13 +22,13 @@
                     <md-card layout="row" layout-align="space-between center">
                         <md-card-title>
                             <md-card-title-text>
-                                {{redacao.name}}
+                                <span class="md-caption"> {{redacao.name}} </span>
                             </md-card-title-text>
                         </md-card-title>
                         <md-card-actions>
-                            <md-button class="md-icon-button" ng-click="reviewCtrl.selectReview(review)">
-                                <i ng-if="redacao.status === 1" class="material-icons">check</i>
-                                <i ng-if="redacao.status === 0" class="material-icons">hourglass_full</i>
+                            <md-button class="md-icon-button">
+                                <i ng-if="redacao.status == 1" class="material-icons">check</i>
+                                <i ng-if="redacao.status == 0" class="material-icons">hourglass_empty</i>
                             </md-button>
                         </md-card-actions>
                     </md-card>

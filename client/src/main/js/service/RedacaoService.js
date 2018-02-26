@@ -5,9 +5,12 @@ const API = '/api/redacao';
 
 
     self.insere = function(redacao) {
-        console.log("asljdasd");
         return $http.post(`${API}`, redacao);
     };
 
+
+    self.getAll = function() {
+        return $http.get(`${API}`);
+    };
 
 }]);

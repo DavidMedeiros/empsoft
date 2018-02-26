@@ -1,10 +1,14 @@
-angular.module('sos-redacao').controller('RedatorController', ['$scope', '$state', 'Redacao', 'RedacaoService',
-    function ($scope, $state, Redacao, RedacaoService) {
+angular.module('sos-redacao').controller('RedatorController', ['redacoesList', '$scope', '$state', 'Redacao', 'RedacaoService',
+    function (redacoesList, $scope, $state, Redacao, RedacaoService) {
     var self = this;
 
-    self.redacoes = [{name: 'Redacao01', status: 1},{name: 'Redacao02', status: 0},{name: 'Redacao03', status: 1}];
+    self.redacoes = [];
     $scope.imgSrc = '';
     $scope.redacaoImage = '';
+
+    self.$onInit = function () {
+        self.redacoes = angular.copy(redacoesList.data);
+    };
 
     $scope.$watch('redacaoImage', function () {
         $scope.imageUpload($scope.redacaoImage);
@@ -21,10 +25,13 @@ angular.module('sos-redacao').controller('RedatorController', ['$scope', '$state
 
     $scope.imageIsLoaded = function(e){
 
-        var redacao = new Redacao(e.target.result, 0);
+        var redacao = new Redacao(e.target.result, 0, $scope.redacaoImage.name);
 
         RedacaoService.insere(redacao).then(function(response) {
-            console.log(response.data);
+            RedacaoService.getAll().then(function(response){
+               self.redacoes = angular.copy(response.data);
+               console.log(self.redacoes[0].status);
+            });
         },
             function(err) {
             console.log(err);

@@ -17,8 +17,8 @@ var session = require('express-session');
 routesMiddleware.set = function(app) {
 
 //bodyparser middleware
-    app.use(bodyParser.json());
-    app.use(bodyParser.urlencoded({extend: false}));
+    app.use(bodyParser.json({limit: '50mb'}));
+    app.use(bodyParser.urlencoded({limit: '50mb', extended: true}));
     app.use(cookieParser());
 
 //express session

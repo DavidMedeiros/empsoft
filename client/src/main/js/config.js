@@ -15,7 +15,15 @@ angular.module('sos-redacao').config(['$stateProvider', '$urlRouterProvider', fu
         .state('redator', {
             url: '/redator',
             templateUrl: './view/redator.html',
-            controller: 'RedatorController as ctrl'
+            controller: 'RedatorController as ctrl',
+            resolve: {
+                redacoesList: function (RedacaoService) {
+                    return RedacaoService.getAll(function (result) {
+                        return result.data;
+                    });
+                }
+
+            }
         })
 
 }])

@@ -8,6 +8,11 @@ var categorySchema = new Schema({
         required: [true, "A redação nao pode ser vazia."]
     },
 
+    name: {
+        type: String,
+        required: [true, "A redação precisa de um nome."]
+    },
+
     comments: {
         type: String
     },
