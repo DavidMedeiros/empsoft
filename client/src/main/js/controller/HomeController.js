@@ -1,7 +1,8 @@
 angular.module('sos-redacao').controller('HomeController', ['$state', function ($state) {
     var self = this;
 
-    console.log("chegou aqui");
+    self.redatorSrc = 'view/assets/redator.jpg';
+    self.corretorSrc = 'view/assets/corretor.jpg';
 
     self.entrarAluno = function() {
         console.log("rota redator");

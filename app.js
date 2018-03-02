@@ -10,6 +10,7 @@ var app = express();
 
 app.use(morgan('combined'));
 
+
 routesMiddlware.set(app);
 bootstrapMiddleware.set(app);
 

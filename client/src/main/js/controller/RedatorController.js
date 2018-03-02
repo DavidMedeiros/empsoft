@@ -17,7 +17,15 @@ angular.module('sos-redacao').controller('RedatorController', ['redacoesList', '
     };
 
     self.visualizar = function(id) {
-        $state.go('redacao', {redacaoId: id} );
+
+        var param = {
+            redacaoId: id,
+            corretor: "false"
+        };
+
+        console.log(param);
+
+        $state.go('redacao', param );
     };
 
     $scope.$watch('redacaoImage', function () {
