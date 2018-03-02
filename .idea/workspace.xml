@@ -2,16 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e372ffa8-bbe7-4b57-bd1c-799ddb922bee" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/app.js" afterPath="$PROJECT_DIR$/app.js" />
-      <change beforePath="$PROJECT_DIR$/client/src/main/css/style.css" afterPath="$PROJECT_DIR$/client/src/main/css/style.css" />
-      <change beforePath="$PROJECT_DIR$/client/src/main/index.html" afterPath="$PROJECT_DIR$/client/src/main/index.html" />
-      <change beforePath="$PROJECT_DIR$/client/src/main/js/config.js" afterPath="$PROJECT_DIR$/client/src/main/js/config.js" />
-      <change beforePath="$PROJECT_DIR$/client/src/main/js/controller/CorretorController.js" afterPath="$PROJECT_DIR$/client/src/main/js/controller/CorretorController.js" />
-      <change beforePath="$PROJECT_DIR$/client/src/main/js/controller/HomeController.js" afterPath="$PROJECT_DIR$/client/src/main/js/controller/HomeController.js" />
-      <change beforePath="$PROJECT_DIR$/client/src/main/js/controller/RedacaoController.js" afterPath="$PROJECT_DIR$/client/src/main/js/controller/RedacaoController.js" />
-      <change beforePath="$PROJECT_DIR$/client/src/main/js/controller/RedatorController.js" afterPath="$PROJECT_DIR$/client/src/main/js/controller/RedatorController.js" />
-      <change beforePath="$PROJECT_DIR$/client/src/main/view/home.html" afterPath="$PROJECT_DIR$/client/src/main/view/home.html" />
+      <change beforePath="$PROJECT_DIR$/client/src/main/view/redacao.html" afterPath="$PROJECT_DIR$/client/src/main/view/redacao.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -25,12 +16,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="dbConfig.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="dbConfig.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server/src/main/config/dbConfig.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="105">
               <caret line="7" column="38" lean-forward="true" selection-start-line="7" selection-start-column="38" selection-end-line="7" selection-end-column="38" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="redacao.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/client/src/main/view/redacao.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="17" column="85" lean-forward="false" selection-start-line="17" selection-start-column="85" selection-end-line="17" selection-end-column="85" />
+              <folding>
+                <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#md-card-content#0;n#md-card#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -47,7 +50,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>Modal</find>
       <find>ModalServic</find>
       <find>ModalSer</find>
       <find>ui</find>
@@ -77,6 +79,7 @@
       <find>4dp</find>
       <find />
       <find>console</find>
+      <find>img</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -96,7 +99,6 @@
         <option value="$PROJECT_DIR$/client/src/main/js/factory/Redacao.js" />
         <option value="$PROJECT_DIR$/server/src/main/model/Redacao.js" />
         <option value="$PROJECT_DIR$/client/src/main/view/redator.html" />
-        <option value="$PROJECT_DIR$/client/src/main/view/redacao.html" />
         <option value="$PROJECT_DIR$/client/src/main/js/service/RedacaoService.js" />
         <option value="$PROJECT_DIR$/server/src/main/router/redacaoRouter.js" />
         <option value="$PROJECT_DIR$/server/src/main/service/redacaoService.js" />
@@ -115,6 +117,7 @@
         <option value="$PROJECT_DIR$/client/src/main/js/config.js" />
         <option value="$PROJECT_DIR$/client/src/main/js/controller/CorretorController.js" />
         <option value="$PROJECT_DIR$/server/src/main/config/dbConfig.js" />
+        <option value="$PROJECT_DIR$/client/src/main/view/redacao.html" />
       </list>
     </option>
   </component>
@@ -344,12 +347,12 @@
       <workItem from="1519667116162" duration="12953000" />
       <workItem from="1519879371522" duration="439000" />
       <workItem from="1520006826022" duration="8732000" />
-      <workItem from="1520018632273" duration="2978000" />
+      <workItem from="1520018632273" duration="3227000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="45558000" />
+    <option name="totallyTimeSpent" value="45807000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -688,14 +691,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/main/view/redacao.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-300">
-          <caret line="7" column="66" lean-forward="false" selection-start-line="7" selection-start-column="62" selection-end-line="7" selection-end-column="66" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/src/main/js/controller/RedatorController.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
@@ -733,6 +728,16 @@
         <state relative-caret-position="105">
           <caret line="7" column="38" lean-forward="true" selection-start-line="7" selection-start-column="38" selection-end-line="7" selection-end-column="38" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/main/view/redacao.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="85" lean-forward="false" selection-start-line="17" selection-start-column="85" selection-end-line="17" selection-end-column="85" />
+          <folding>
+            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#md-card-content#0;n#md-card#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
