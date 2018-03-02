@@ -4,8 +4,8 @@
             <md-card-title>
                 <md-card-title-text layout="row" layout-align="space-between center">
                     <span class="md-title"> {{ctrl.redacao.name}} </span>
-                    <span ng-if="ctrl.redacao.status == 1" class="md-title"> Nota: {{ctrl.redacao.nota}} </span>
-                    <span ng-if="ctrl.redacao.status == 0" class="md-title"> Nota: PENDENTE </span>
+                    <span ng-if="ctrl.redacao.status == 1 || ctrl.modoCorrecao" class="md-title"> Nota: {{ctrl.redacao.nota}} </span>
+                    <span ng-if="ctrl.redacao.status == 0 && !ctrl.modoCorrecao" class="md-title"> Nota: PENDENTE </span>
                 </md-card-title-text>
             </md-card-title>
 
@@ -46,8 +46,8 @@
 
                         <div layout="column" layout-align="space-around start">
                             <div layout="row" style="padding-top: 2px; padding-left: 10px;">
-                                <md-radio-group ng-disabled="true" layout="row" layout-align="space-between center"
-                                                ng-model="ctrl.redacao.rateI">
+                                <md-radio-group ng-disabled="!ctrl.modoCorrecao" layout="row" layout-align="space-between center"
+                                                ng-model="ctrl.redacao.rateI" ng-change="ctrl.atualizaNota()">
                                     <md-radio-button value="0" class="md-primary">0</md-radio-button>
                                     <md-radio-button value="40" class="md-primary"> 40</md-radio-button>
                                     <md-radio-button value="80" class="md-primary">80</md-radio-button>
@@ -57,8 +57,8 @@
                             </div>
 
                             <div layout="row" style="padding-top: 3px; padding-left: 10px;">
-                                <md-radio-group ng-disabled="true" layout="row" layout-align="space-between center"
-                                                ng-model="ctrl.redacao.rateII">
+                                <md-radio-group ng-disabled="!ctrl.modoCorrecao" layout="row" layout-align="space-between center"
+                                                ng-model="ctrl.redacao.rateII" ng-change="ctrl.atualizaNota()">
                                     <md-radio-button value="0" class="md-primary">0</md-radio-button>
                                     <md-radio-button value="40" class="md-primary"> 40</md-radio-button>
                                     <md-radio-button value="80" class="md-primary">80</md-radio-button>
@@ -68,8 +68,8 @@
                             </div>
 
                             <div layout="row" style="padding-top: 3px; padding-left: 10px;">
-                                <md-radio-group ng-disabled="true" layout="row" layout-align="space-between center"
-                                                ng-model="ctrl.redacao.rateIII">
+                                <md-radio-group ng-disabled="!ctrl.modoCorrecao" layout="row" layout-align="space-between center"
+                                                ng-model="ctrl.redacao.rateIII" ng-change="ctrl.atualizaNota()">
                                     <md-radio-button value="0" class="md-primary">0</md-radio-button>
                                     <md-radio-button value="40" class="md-primary"> 40</md-radio-button>
                                     <md-radio-button value="80" class="md-primary">80</md-radio-button>
@@ -79,8 +79,8 @@
                             </div>
 
                             <div layout="row" style="padding-top: 3px; padding-left: 10px;">
-                                <md-radio-group ng-disabled="true" layout="row" layout-align="space-between center"
-                                                ng-model="ctrl.redacao.rateIV">
+                                <md-radio-group ng-disabled="!ctrl.modoCorrecao" layout="row" layout-align="space-between center"
+                                                ng-model="ctrl.redacao.rateIV" ng-change="ctrl.atualizaNota()">
                                     <md-radio-button value="0" class="md-primary">0</md-radio-button>
                                     <md-radio-button value="40" class="md-primary"> 40</md-radio-button>
                                     <md-radio-button value="80" class="md-primary">80</md-radio-button>
@@ -90,8 +90,8 @@
                             </div>
 
                             <div layout="row" style="padding-top: 3px; padding-left: 10px;">
-                                <md-radio-group ng-disabled="true" layout="row" layout-align="space-between center"
-                                                ng-model="ctrl.redacao.rateV">
+                                <md-radio-group ng-disabled="!ctrl.modoCorrecao" layout="row" layout-align="space-between center"
+                                                ng-model="ctrl.redacao.rateV" ng-change="ctrl.atualizaNota()">
                                     <md-radio-button value="0" class="md-primary">0</md-radio-button>
                                     <md-radio-button value="40" class="md-primary"> 40</md-radio-button>
                                     <md-radio-button value="80" class="md-primary">80</md-radio-button>
@@ -111,7 +111,7 @@
                             </div>
 
                             <div layout="row" layout-align="center center">
-                                <textarea ng-model="ctrl.redacao.comments" ng-disabled="true" flex="95" style="height: 170px; font-size: 13px;"> </textarea>
+                                <textarea ng-model="ctrl.redacao.comments" ng-disabled="!ctrl.modoCorrecao" flex="95" style="height: 170px; font-size: 13px;"> </textarea>
                             </div>
                         </div>
                     </div>
@@ -123,7 +123,10 @@
             <md-card-actions layout="row" layout-align="end center">
                 <md-button ng-click="ctrl.voltar()">Voltar</md-button>
 
-                <md-button ng-click="ctrl.excluir()">Excluir</md-button>
+                <md-button ng-if="!ctrl.modoCorrecao" ng-click="ctrl.excluir()">Excluir</md-button>
+
+                <md-button ng-if="ctrl.modoCorrecao" ng-click="ctrl.corrigir()">Finalizar</md-button>
+
             </md-card-actions>
         </md-card>
     </div>

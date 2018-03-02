@@ -23,6 +23,15 @@ redacaoService.create = function(redacao, callback){
     }
 };
 
+redacaoService.update = function(id, redacao, callback)  {
+    return getById(id, function (err, result) {
+        if(err) return callback(err, null);
+        let oldRedacao = result;
+        _.updateModel(oldRedacao, redacao);
+        return persistModel(oldRedacao, callback);
+    });
+};
+
 
 redacaoService.getById = function(id, callback){
     getById(id, function (err, result) {
@@ -31,6 +40,14 @@ redacaoService.getById = function(id, callback){
         return callback(err, result);
     });
 };
+
+redacaoService.getByStatus = function(status, callback) {
+    return Redacao.find({status: status}, function(err, result) {
+        if(err) return callback(err, null);
+        if(_.isEmpty(result)) return callback(err, []);
+        return callback(err, result);
+    });
+}
 
 redacaoService.delete = function (id, callback) {
     return Redacao.remove({_id: id}, function (err, result) {
@@ -43,6 +60,14 @@ redacaoService.delete = function (id, callback) {
 
 function getById(id, callback) {
     return Redacao.findById(id, callback);
+}
+
+function persistModel(redacao, callback) {
+    return redacao.save(function (err, result) {
+        if(err) return callback(err, null);
+        if(_.isEmpty(result)) return callback(err, null);
+        return callback(err, result.toObject());
+    })
 }
 
 module.exports = redacaoService;
