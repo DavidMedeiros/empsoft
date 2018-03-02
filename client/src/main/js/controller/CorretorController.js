@@ -8,7 +8,6 @@ angular.module('sos-redacao').controller('CorretorController', ['redacoesList', 
 
     self.$onInit = function () {
         self.redacoes = angular.copy(redacoesList);
-        console.log(self.redacoes);
     };
 
     self.atualizar = function() {
@@ -22,8 +21,16 @@ angular.module('sos-redacao').controller('CorretorController', ['redacoesList', 
         });
     };
 
+
+
     self.visualizar = function(id) {
-        $state.go('redacao', {redacaoId: id} );
+
+        var param = {
+            redacaoId: id,
+            corretor: "true"
+        };
+
+        $state.go('redacao', param);
     };
 
     $scope.$watch('redacaoImage', function () {
