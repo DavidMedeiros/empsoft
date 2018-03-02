@@ -33,7 +33,6 @@ angular.module('sos-redacao').config(['$stateProvider', '$urlRouterProvider', fu
             resolve: {
                 redacoesList: function (RedacaoService) {
                     return RedacaoService.getByStatus(0).then(function (result) {
-                        console.log(result);
                         return result.data;
                     });
                 }
@@ -41,7 +40,7 @@ angular.module('sos-redacao').config(['$stateProvider', '$urlRouterProvider', fu
         })
 
         .state('redacao', {
-            url: '/redacao/:redacaoId',
+            url: '/redacao/:redacaoId/:corretor',
             templateUrl: './view/redacao.html',
             controller: 'RedacaoController as ctrl',
             resolve: {
@@ -49,6 +48,11 @@ angular.module('sos-redacao').config(['$stateProvider', '$urlRouterProvider', fu
                     return RedacaoService.getById($stateParams.redacaoId).then(function(result){
                         return result.data;
                     });
+                },
+
+                modoCorrecao: function($stateParams) {
+                    console.log($stateParams.corretor);
+                    return $stateParams.corretor;
                 }
             }
         })

@@ -1,18 +1,18 @@
-angular.module('sos-redacao').controller('RedacaoController', ['redacao', '$scope', '$state', 'Redacao',
-    'RedacaoService', function (redacao, $scope, $state, Redacao, RedacaoService) {
+angular.module('sos-redacao').controller('RedacaoController', ['redacao', 'modoCorrecao', '$scope', '$state', 'Redacao',
+    'RedacaoService', function (redacao, modoCorrecao, $scope, $state, Redacao, RedacaoService) {
 
 
     var self = this;
 
     self.redacao = {};
-    self.modoCorrecao;
 
     self.$onInit = function () {
+        self.modoCorrecao = modoCorrecao === "true";
         _.assign(self.redacao, redacao);
 
-        if(self.redacao.status === "0") {
+        if(self.modoCorrecao) {
             _initialize();
-        }
+        } else
 
         self.redacao.nota = soma();
 
@@ -53,7 +53,6 @@ angular.module('sos-redacao').controller('RedacaoController', ['redacao', '$scop
     };
 
     function _initialize() {
-
         if(_.isEmpty(self.redacao.comments)) {
             self.redacao.comments = "";
         }

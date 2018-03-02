@@ -1,7 +1,7 @@
 {
   "name": "sos-redacao",
   "version": "1.0.0",
-  "description": "Ferramenta de auxilio a code review",
+  "description": "Ferramenta de auxilio a revisao de redacoes",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -10,7 +10,7 @@
   "repository": {
     "type": "git"
   },
-  "author": "Ingenico",
+  "author": "Filipe Teotonio",
   "license": "ISC",
   "bugs": {},
   "homepage": "",
