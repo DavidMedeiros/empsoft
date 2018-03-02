@@ -5,7 +5,7 @@ let db = mongoose.connection;
 
 module.exports = () => {
 
-    const profile = 'FORM-REVIEW';
+        const profile = 'SOS-REDACAO';
 
     /**
      * Caso não haja uma variável de ambiente informando o endereço do banco de dados,

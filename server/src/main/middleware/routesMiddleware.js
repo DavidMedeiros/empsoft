@@ -3,7 +3,6 @@ const routesMiddleware = {};
 const redacaoRouter = require('../router/redacaoRouter');
 
 //login requirements
-var path = require('path');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var flash = require('connect-flash');
@@ -18,8 +17,8 @@ var session = require('express-session');
 routesMiddleware.set = function(app) {
 
 //bodyparser middleware
-    app.use(bodyParser.json());
-    app.use(bodyParser.urlencoded({extend: false}));
+    app.use(bodyParser.json({limit: '50mb'}));
+    app.use(bodyParser.urlencoded({limit: '50mb', extended: true}));
     app.use(cookieParser());
 
 //express session
@@ -34,7 +33,6 @@ routesMiddleware.set = function(app) {
 
 //flash connect
     app.use(flash());
-
     app.use('/api/redacao', redacaoRouter);
 };
 

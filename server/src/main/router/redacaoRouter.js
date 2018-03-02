@@ -36,6 +36,14 @@ redacaoRouter.get('/:id', function (request, response) {
     });
 });
 
+redacaoRouter.get('/status/:status', function (request, response) {
+    redacaoService.getByStatus(request.params.status, function (err, result) {
+        if(err) {
+            return response.status(err.status || _.BAD_REQUEST).json(err.message || err);
+        }
+        return response.status(_.OK).json(result);
+    });
+});
 
 /**
  * Salva uma nova redacao
@@ -48,6 +56,15 @@ redacaoRouter.post('/', function (request, response) {
         }
         return response.status(_.CREATED).json(result);
     });
+});
+
+redacaoRouter.patch('/:id', function(request, response) {
+   redacaoService.update(request.params.id, request.body, function(err, result) {
+       if(err) {
+           return response.status(err.status || _.BAD_REQUEST).json(err.message || err);
+       }
+       return response.status(_.CREATED).json(result);
+   });
 });
 
 /**

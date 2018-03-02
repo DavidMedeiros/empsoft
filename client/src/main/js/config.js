@@ -9,8 +9,64 @@ angular.module('sos-redacao').config(['$stateProvider', '$urlRouterProvider', fu
         .state('home', {
             url: '/home',
             templateUrl: './view/home.html',
-            controller: 'HomeController as homeCtrl'
+            controller: 'HomeController as ctrl'
         })
+
+        .state('redator', {
+            url: '/redator',
+            templateUrl: './view/redator.html',
+            controller: 'RedatorController as ctrl',
+            resolve: {
+                redacoesList: function (RedacaoService) {
+                    return RedacaoService.getAll(function (result) {
+                        return result.data;
+                    });
+                }
+
+            }
+        })
+
+        .state('corretor', {
+            url: '/corretor',
+            templateUrl: './view/corretor.html',
+            controller: 'CorretorController as ctrl',
+            resolve: {
+                redacoesList: function (RedacaoService) {
+                    return RedacaoService.getByStatus(0).then(function (result) {
+                        console.log(result);
+                        return result.data;
+                    });
+                }
+            }
+        })
+
+        .state('redacao', {
+            url: '/redacao/:redacaoId',
+            templateUrl: './view/redacao.html',
+            controller: 'RedacaoController as ctrl',
+            resolve: {
+                redacao: function ($stateParams, RedacaoService) {
+                    return RedacaoService.getById($stateParams.redacaoId).then(function(result){
+                        return result.data;
+                    });
+                }
+            }
+        })
+
+
+        // .state('redacao.redacaoId.info', {
+        //     url: 'redacao/:redacaoId',
+        //     templateUrl: './view/redacao.html',
+        //     controller: 'RedacaoController as ctrl',
+        //     access : {
+        //         restricted: true
+        //     },
+        //     resolve: {
+        //         redacao: function ($stateParams, RedacaoService) {
+        //             return RedacaoService.getById($stateParams.redacaoId).then(info => info.data);
+        //         }
+        //     }
+        // })
 
 }])
     .constant('_', window._)

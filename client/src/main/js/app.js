@@ -1,4 +1,4 @@
-let app =angular.module('sos-redacao', ['ngMaterial', 'ngAnimate', 'ui.router', 'ngCookies']);
+let app =angular.module('sos-redacao', ['ngMaterial', 'ngAnimate', 'ui.router', 'ngCookies', 'ngFileUpload']);
 
 app.run(function ($rootScope, $state, $transitions) {
 
