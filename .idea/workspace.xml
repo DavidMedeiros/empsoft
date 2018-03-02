@@ -2,18 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e372ffa8-bbe7-4b57-bd1c-799ddb922bee" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/client/src/main/js/controller/CorretorController.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/client/src/main/view/corretor.html" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/client/src/main/index.html" afterPath="$PROJECT_DIR$/client/src/main/index.html" />
-      <change beforePath="$PROJECT_DIR$/client/src/main/js/config.js" afterPath="$PROJECT_DIR$/client/src/main/js/config.js" />
-      <change beforePath="$PROJECT_DIR$/client/src/main/js/controller/HomeController.js" afterPath="$PROJECT_DIR$/client/src/main/js/controller/HomeController.js" />
+      <change beforePath="$PROJECT_DIR$/client/src/main/css/style.css" afterPath="$PROJECT_DIR$/client/src/main/css/style.css" />
+      <change beforePath="$PROJECT_DIR$/client/src/main/js/controller/CorretorController.js" afterPath="$PROJECT_DIR$/client/src/main/js/controller/CorretorController.js" />
       <change beforePath="$PROJECT_DIR$/client/src/main/js/controller/RedacaoController.js" afterPath="$PROJECT_DIR$/client/src/main/js/controller/RedacaoController.js" />
-      <change beforePath="$PROJECT_DIR$/client/src/main/js/service/RedacaoService.js" afterPath="$PROJECT_DIR$/client/src/main/js/service/RedacaoService.js" />
-      <change beforePath="$PROJECT_DIR$/client/src/main/view/home.html" afterPath="$PROJECT_DIR$/client/src/main/view/home.html" />
-      <change beforePath="$PROJECT_DIR$/client/src/main/view/redacao.html" afterPath="$PROJECT_DIR$/client/src/main/view/redacao.html" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/router/redacaoRouter.js" afterPath="$PROJECT_DIR$/server/src/main/router/redacaoRouter.js" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/service/redacaoService.js" afterPath="$PROJECT_DIR$/server/src/main/service/redacaoService.js" />
+      <change beforePath="$PROJECT_DIR$/client/src/main/js/service/ToastService.js" afterPath="$PROJECT_DIR$/client/src/main/js/service/ToastService.js" />
+      <change beforePath="$PROJECT_DIR$/client/src/main/view/corretor.html" afterPath="$PROJECT_DIR$/client/src/main/view/corretor.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -27,21 +20,41 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="redacaoRouter.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/src/main/router/redacaoRouter.js">
+      <file leaf-file-name="corretor.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/client/src/main/view/corretor.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="215">
-              <caret line="58" column="3" lean-forward="true" selection-start-line="58" selection-start-column="3" selection-end-line="58" selection-end-column="3" />
+            <state relative-caret-position="508">
+              <caret line="38" column="10" lean-forward="false" selection-start-line="38" selection-start-column="10" selection-end-line="38" selection-end-column="10" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="util.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/src/main/util/util.js">
+      <file leaf-file-name="CorretorController.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/src/main/js/controller/CorretorController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="7" lean-forward="false" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
+            <state relative-caret-position="270">
+              <caret line="18" column="102" lean-forward="false" selection-start-line="18" selection-start-column="102" selection-end-line="18" selection-end-column="102" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ToastService.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/src/main/js/service/ToastService.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="8" column="40" lean-forward="false" selection-start-line="8" selection-start-column="40" selection-end-line="8" selection-end-column="40" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/src/main/css/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="650">
+              <caret line="82" column="1" lean-forward="false" selection-start-line="82" selection-start-column="1" selection-end-line="82" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -50,48 +63,8 @@
       <file leaf-file-name="RedacaoController.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/src/main/js/controller/RedacaoController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="35">
-              <caret line="24" column="23" lean-forward="false" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="23" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RedacaoService.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/src/main/js/service/RedacaoService.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="23" column="52" lean-forward="false" selection-start-line="23" selection-start-column="52" selection-end-line="23" selection-end-column="52" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="redacaoService.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/server/src/main/service/redacaoService.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="640">
-              <caret line="70" column="1" lean-forward="true" selection-start-line="70" selection-start-column="1" selection-end-line="70" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Redacao.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/src/main/model/Redacao.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="735">
-              <caret line="49" column="66" lean-forward="false" selection-start-line="49" selection-start-column="66" selection-end-line="49" selection-end-column="66" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="redacao.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/src/main/view/redacao.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="519">
-              <caret line="127" column="89" lean-forward="false" selection-start-line="127" selection-start-column="89" selection-end-line="127" selection-end-column="89" />
+            <state relative-caret-position="200">
+              <caret line="35" column="6" lean-forward="false" selection-start-line="35" selection-start-column="6" selection-end-line="35" selection-end-column="6" />
               <folding />
             </state>
           </provider>
@@ -134,8 +107,9 @@
       <find>status</find>
       <find>id in</find>
       <find>disabl</find>
-      <find>_</find>
       <find>_.OK</find>
+      <find>updateModel</find>
+      <find>_</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -146,7 +120,6 @@
       <list>
         <option value="$PROJECT_DIR$/server/src/main/router/categoriesRouter.js" />
         <option value="$PROJECT_DIR$/client/src/main/js/service/CategoryService.js" />
-        <option value="$PROJECT_DIR$/client/src/main/js/service/ToastService.js" />
         <option value="$PROJECT_DIR$/client/src/main/js/factory/Category.js" />
         <option value="$PROJECT_DIR$/client/src/main/js/service/kkk.js" />
         <option value="$PROJECT_DIR$/client/src/main/js/service/ModalService.js" />
@@ -154,7 +127,6 @@
         <option value="$PROJECT_DIR$/server/src/main/router/imgRouter.js" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/client/src/main/js/app.js" />
-        <option value="$PROJECT_DIR$/client/src/main/css/style.css" />
         <option value="$PROJECT_DIR$/server/src/main/config/dbConfig.js" />
         <option value="$PROJECT_DIR$/server/src/main/middleware/routesMiddleware.js" />
         <option value="$PROJECT_DIR$/client/src/main/js/factory/Redacao.js" />
@@ -165,12 +137,15 @@
         <option value="$PROJECT_DIR$/client/src/main/view/home.html" />
         <option value="$PROJECT_DIR$/client/src/main/js/controller/HomeController.js" />
         <option value="$PROJECT_DIR$/client/src/main/js/config.js" />
-        <option value="$PROJECT_DIR$/client/src/main/js/controller/CorretorController.js" />
         <option value="$PROJECT_DIR$/client/src/main/view/redacao.html" />
-        <option value="$PROJECT_DIR$/client/src/main/js/controller/RedacaoController.js" />
         <option value="$PROJECT_DIR$/client/src/main/js/service/RedacaoService.js" />
         <option value="$PROJECT_DIR$/server/src/main/router/redacaoRouter.js" />
         <option value="$PROJECT_DIR$/server/src/main/service/redacaoService.js" />
+        <option value="$PROJECT_DIR$/client/src/main/js/controller/RedacaoController.js" />
+        <option value="$PROJECT_DIR$/client/src/main/js/controller/CorretorController.js" />
+        <option value="$PROJECT_DIR$/client/src/main/js/service/ToastService.js" />
+        <option value="$PROJECT_DIR$/client/src/main/css/style.css" />
+        <option value="$PROJECT_DIR$/client/src/main/view/corretor.html" />
       </list>
     </option>
   </component>
@@ -192,8 +167,9 @@
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
   <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="y" value="23" />
     <option name="width" value="1280" />
-    <option name="height" value="800" />
+    <option name="height" value="708" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -237,6 +213,14 @@
               <item name="client" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="empsoft" type="b2602c69:ProjectViewProjectNode" />
+              <item name="empsoft" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="empsoft" type="b2602c69:ProjectViewProjectNode" />
@@ -333,6 +317,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/client/src/main/js/service" />
       <recent name="$PROJECT_DIR$/client/src/main/view" />
       <recent name="$PROJECT_DIR$/client/src/main/js/controller" />
     </key>
@@ -401,12 +386,12 @@
       <workItem from="1519525129373" duration="8000" />
       <workItem from="1519667116162" duration="12953000" />
       <workItem from="1519879371522" duration="439000" />
-      <workItem from="1520006826022" duration="3947000" />
+      <workItem from="1520006826022" duration="4653000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37795000" />
+    <option name="totallyTimeSpent" value="38501000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -614,13 +599,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/server/src/main/router/imgRouter.js" />
-    <entry file="file://$PROJECT_DIR$/client/src/main/js/service/ToastService.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="37" lean-forward="false" selection-start-line="6" selection-start-column="37" selection-end-line="6" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
@@ -632,13 +610,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="8" column="41" lean-forward="true" selection-start-line="8" selection-start-column="41" selection-end-line="8" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/main/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="568">
-          <caret line="71" column="1" lean-forward="false" selection-start-line="71" selection-start-column="1" selection-end-line="71" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -667,13 +638,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
           <caret line="3" column="14" lean-forward="false" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/main/js/controller/RedatorController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="34" column="0" lean-forward="true" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -717,14 +681,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/main/js/controller/CorretorController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="49" lean-forward="false" selection-start-line="9" selection-start-column="49" selection-end-line="9" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/src/main/js/config.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="411">
@@ -733,10 +689,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/main/view/corretor.html">
+    <entry file="file://$PROJECT_DIR$/server/src/main/util/util.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="226">
+          <caret line="31" column="2" lean-forward="false" selection-start-line="31" selection-start-column="2" selection-end-line="31" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/main/router/redacaoRouter.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="309">
+          <caret line="58" column="3" lean-forward="true" selection-start-line="58" selection-start-column="3" selection-end-line="58" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/main/js/service/RedacaoService.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="52" lean-forward="false" selection-start-line="23" selection-start-column="52" selection-end-line="23" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/main/service/redacaoService.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="747">
+          <caret line="70" column="1" lean-forward="true" selection-start-line="70" selection-start-column="1" selection-end-line="70" selection-end-column="1" />
           <folding />
         </state>
       </provider>
@@ -757,42 +737,50 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/main/js/controller/RedatorController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="34" column="0" lean-forward="true" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/client/src/main/js/controller/RedacaoController.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="35">
-          <caret line="24" column="23" lean-forward="false" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="23" />
+        <state relative-caret-position="200">
+          <caret line="35" column="6" lean-forward="false" selection-start-line="35" selection-start-column="6" selection-end-line="35" selection-end-column="6" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/main/util/util.js">
+    <entry file="file://$PROJECT_DIR$/client/src/main/js/controller/CorretorController.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="7" lean-forward="false" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
+        <state relative-caret-position="270">
+          <caret line="18" column="102" lean-forward="false" selection-start-line="18" selection-start-column="102" selection-end-line="18" selection-end-column="102" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/main/router/redacaoRouter.js">
+    <entry file="file://$PROJECT_DIR$/client/src/main/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="215">
-          <caret line="58" column="3" lean-forward="true" selection-start-line="58" selection-start-column="3" selection-end-line="58" selection-end-column="3" />
+        <state relative-caret-position="650">
+          <caret line="82" column="1" lean-forward="false" selection-start-line="82" selection-start-column="1" selection-end-line="82" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/main/js/service/RedacaoService.js">
+    <entry file="file://$PROJECT_DIR$/client/src/main/js/service/ToastService.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="52" lean-forward="false" selection-start-line="23" selection-start-column="52" selection-end-line="23" selection-end-column="52" />
+        <state relative-caret-position="120">
+          <caret line="8" column="40" lean-forward="false" selection-start-line="8" selection-start-column="40" selection-end-line="8" selection-end-column="40" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/src/main/service/redacaoService.js">
+    <entry file="file://$PROJECT_DIR$/client/src/main/view/corretor.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="640">
-          <caret line="70" column="1" lean-forward="true" selection-start-line="70" selection-start-column="1" selection-end-line="70" selection-end-column="1" />
+        <state relative-caret-position="508">
+          <caret line="38" column="10" lean-forward="false" selection-start-line="38" selection-start-column="10" selection-end-line="38" selection-end-column="10" />
           <folding />
         </state>
       </provider>

@@ -38,7 +38,7 @@ angular.module('sos-redacao').controller('RedacaoController', ['redacao', '$scop
     self.corrigir = function() {
         self.redacao.status = 1;
         RedacaoService.update(redacao._id, self.redacao).then(function(result){
-            $state.go('redator');
+            $state.go('corretor');
         });
     };
 

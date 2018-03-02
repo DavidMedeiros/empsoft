@@ -1,5 +1,5 @@
 angular.module('sos-redacao').controller('CorretorController', ['redacoesList', '$scope', '$state', 'Redacao',
-    'RedacaoService', function (redacoesList, $scope, $state, Redacao, RedacaoService) {
+    'RedacaoService', 'ToastService', function (redacoesList, $scope, $state, Redacao, RedacaoService, ToastService) {
     var self = this;
 
     self.redacoes = [];
@@ -12,8 +12,13 @@ angular.module('sos-redacao').controller('CorretorController', ['redacoesList', 
     };
 
     self.atualizar = function() {
-        RedacaoService.getAll().then(function(response){
+        RedacaoService.getByStatus(0).then(function(response){
            self.redacoes = angular.copy(response.data);
+
+           if(self.redacoes.length === 0) {
+                ToastService.showActionToast("Por enquanto não existem redações a serem corrigidas!");
+           }
+
         });
     };
 
