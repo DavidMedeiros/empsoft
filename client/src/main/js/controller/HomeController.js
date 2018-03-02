@@ -5,4 +5,8 @@ angular.module('sos-redacao').controller('HomeController', ['$state', function (
         $state.go('redator');
     };
 
+    self.entrarCorretor = function() {
+        $state.go('corretor');
+    }
+
 }]);

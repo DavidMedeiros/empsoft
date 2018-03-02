@@ -26,6 +26,20 @@ angular.module('sos-redacao').config(['$stateProvider', '$urlRouterProvider', fu
             }
         })
 
+        .state('corretor', {
+            url: '/corretor',
+            templateUrl: './view/corretor.html',
+            controller: 'CorretorController as ctrl',
+            resolve: {
+                redacoesList: function (RedacaoService) {
+                    return RedacaoService.getByStatus(0).then(function (result) {
+                        console.log(result);
+                        return result.data;
+                    });
+                }
+            }
+        })
+
         .state('redacao', {
             url: '/redacao/:redacaoId',
             templateUrl: './view/redacao.html',

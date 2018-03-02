@@ -6,7 +6,7 @@ angular.module('sos-redacao').service('ToastService', ['$mdToast', function($mdT
             options = {
                 textContent: options,
                 action: 'OK',
-                position: 'bottom right',
+                position: 'bottom center',
                 hideDelay: 2000 //2 segundos
             };
         }
